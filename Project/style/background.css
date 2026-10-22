@@ -1,0 +1,50 @@
+/* CSS Document */
+
+html
+{ background: #0f2d52;}
+
+body
+{ background: transparent;}
+
+body::before
+{ content: "";
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  background: url("../Image/new_saintmichael.png") no-repeat center center;
+  background-size: cover;
+  filter: blur(10px) brightness(0.75);
+  transform: scale(1.08);}   /* hides the soft edges the blur creates */
+
+/* ---------- Header: photo replaces the navy box ---------- */
+#header
+{ position: relative;
+  background: #0f2d52 url("../Image/new_saintmichael.png") no-repeat center 40%;
+  background-size: cover;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);}
+
+/* navy tint so the white and gold text stays readable;
+   it also blurs the photo behind it */
+#header::after
+{ content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: linear-gradient(to bottom, rgba(15, 45, 82, 0.55), rgba(15, 45, 82, 0.85));
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);}
+
+#logo, #menubar
+{ position: relative;
+  z-index: 1;}
+
+#logo
+{ background: transparent;}
+
+#logo_text h1, #logo_text h2
+{ text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);}
+
+/* ---------- Content card lifts off the photo ---------- */
+#site_content, #footer
+{ position: relative;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);}
+

@@ -1,0 +1,84 @@
+/* ---------- Search bar in the menu, next to Contact ---------- */
+#menubar .menu_search
+{ position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  display: flex;
+  margin: 0;
+  padding: 0;}
+
+#menubar .menu_search input
+{ width: 190px;
+  height: 34px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+  font: normal 100% 'trebuchet ms', arial, sans-serif;
+  color: #43423F;
+  background: #FFF;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);}
+
+#menubar .menu_search input:focus
+{ box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 0 2px #0f2d52;}
+
+#menubar .menu_search button
+{ width: 40px;
+  height: 34px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  background: #0f2d52;
+  cursor: pointer;}
+
+#menubar .menu_search button:hover
+{ background: #1b4278;}
+
+#menubar .menu_search button img
+{ display: block;
+  margin: 0 auto;}
+
+/* ---------- Drop-down results ---------- */
+#search_results
+{ display: none;
+  position: absolute;
+  top: 42px;
+  right: 0;
+  z-index: 10;
+  width: 340px;
+  max-height: 380px;
+  overflow-y: auto;
+  background: #FFF;
+  border-radius: 4px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);}
+
+#search_results a
+{ display: block;
+  padding: 10px 14px;
+  border-bottom: 1px solid #EEE;
+  text-decoration: none;
+  color: #777;}
+
+#search_results a:last-child
+{ border-bottom: 0;}
+
+#search_results a:hover
+{ background: #F7F4EA;}
+
+#search_results strong
+{ display: block;
+  color: #0f2d52;
+  font-size: 110%;}
+
+#search_results span
+{ display: block;
+  margin-top: 3px;
+  line-height: 1.5em;}
+
+#search_results mark
+{ background: #F3DC8C;
+  color: #43423F;}
+
+#search_results .no_results
+{ margin: 0;
+  padding: 12px 14px;}

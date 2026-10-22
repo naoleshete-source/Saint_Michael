@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Saint Michael</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+	<link rel="stylesheet" type="text/css" href="style/background.css" />
+	  <link rel="stylesheet" type="text/css" href="style/search.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="home.html">Saint<span class="logo_colour">Michael</span></a></h1>
+			<h2>Helping others.Saving Many.</h2>
+			</div>
+		  </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="Achievements.html">Achievements</a></li>
+          <li><a href="Help.html">Help</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+		          <form id="search_form" class="menu_search" action="#">
+          <input type="text" id="search_field" placeholder="Search the site..." autocomplete="off" aria-label="Search the site" />
+          <button type="submit" title="Search"><img src="Image/search.png" alt="Search" /></button>
+          <div id="search_results"></div>
+        </form>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Latest News</h3>
+        <h4>What are we working on?</h4>
+		  <p>Today's date: <span id="today"></span></p>
+
+<script>
+  const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+  document.getElementById("today").textContent =
+    new Date().toLocaleDateString("en-US", options);
+</script>
+        <h5></h5>
+        <p>2010 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+        <p></p>
+        <h4>New Website Launched</h4>
+        <h5>January 1st, 2010</h5>
+        <p>2010 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+        </ul>
+      
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>SAINT MICHAEL RESOURCE TRUST</h1>
+        <p>Welcome to Saint Michael's official website.</p>
+        <p>A Global non-Profit Dedicated to ending <strong>World Hunger, Preventing Child Mortality, Providing a humane lifestyle for all, and Empowering People with Opportunities to Work and Transform Their Lives</strong>. </p>
+        <p>***************<a href="http://www.html5webtemplates.co.uk">here</a>.</p>
+        <p>This template is a fully functional 5 page website, with an <a href="aboutus.html">About Us</a> page that gives examples of all the styles available with this design.</p>
+        <h1><a href=""></a>ACHIEVEMENTS</h1>
+        <p>Throughout the lifetime of our orgnization we have achieved:</p>
+        <ul>
+          <li>Achievement1</li>
+          <li>Achievement2</li>
+          <li>Achievement3</li>
+          <li>Achievement4</li>
+          <li>Achievement4</li>
+        </ul>
+		  <p>We Aim to Double our Achievements by the End of 2028.</p>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      Copyright &copy; colour_orange | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">Simple web templates by HTML5</a>
+		</div>
+	</div>
+	  <script src="style/search.js"></script>
+</body>
+</html>
